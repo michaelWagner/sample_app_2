@@ -66,7 +66,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
   host = 'https://mighty-fortress-2776.herokuapp.com'
   config.action_mailer.default_url_options = { host: host }
-  ActionMailer::Base.stmp_settings = {
+  ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
     :port           => '587',
     :authentication => :plain,
